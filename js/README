@@ -1,0 +1,9 @@
+
+Välkommen till Weather App Over 9000!
+
+Instruktioner:
+
+Sök på stad utifrån dina önskemål. Detta görs genom att skriva in stadens
+namn i sökrutan och sedan trycka på 'submit'.
+När du tryckt 'submit' så kommer vädret, temperaturen, vindhastighet och luftfuktighet
+att visas nedan.

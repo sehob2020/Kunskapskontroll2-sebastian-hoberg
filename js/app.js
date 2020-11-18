@@ -29,7 +29,7 @@ button.addEventListener('click', function(event) {
       //statuskod 404 "not found" kommer vi hantera som ett error
       // i vårt fall betyder det att staden inte kunde hittas
       else if (response.status === 404) {
-        throw 'The city cannot be found';
+        throw 'No city with that name was found';
       }
 
       //statuskod 401 "unauthorized" kommer också hanteras som ett error
@@ -70,9 +70,10 @@ button.addEventListener('click', function(event) {
         name.style.color = 'red';
       }
     }
+    // Här fångas eventuella errors upp och då kommer ett felmeddelande att visas
   ).catch(
-    function () {
-      console.log('No city with that name was found');
+    function (e) {
+      console.log(e);
     }
   )
 event.preventDefault();
