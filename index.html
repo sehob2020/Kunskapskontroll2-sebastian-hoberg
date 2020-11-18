@@ -3,12 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>JS Testing</title>
+    <link rel="stylesheet" href="css/style.css">
+    <title>WeatherApp9000</title>
 </head>
 <body>
-    
-
-    <script src="app.js"></script>
+    <div class="wrapper">
+        <div class="header">
+            <h1 id="title">Weather App Over 9000</h1>
+        </div>
+        
+        <div class="form-container">
+            <form id="form">
+                <label id="user-input-text"></label>
+                <input type="text" id="user-input" placeholder="Search your city">
+                <input type="submit" id="submit" value="Submit">
+        </div>
+        </form>
+    </div>
+    <div class="current-city">
+        <h1 class="city-name"></h1>
+        <br>
+        <br>
+        <p class="info">Weather:</p>
+        <p class="description"></p>
+        <br>
+        <img src="" alt="" class="weather-icon">
+        <p class="info">Temperature:</p>
+        <p class="temperature"></p>
+        <br>
+        <p class="info">Windspeed:</p>
+        <p class="windspeed"></p>
+        <br>
+        <p class="info">Humidity:</p>
+        <p class="humidity"></p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>*Everything is displayed in metric values</p>
+    </div>
+    <script src="js/app.js"></script>
 </body>
 </html>
