@@ -12,7 +12,7 @@ let humidity = document.querySelector('.humidity');
 
 // API - Som all data kommer att hämtas från
 let baseUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
-let apiKey = '&units=metric&lang=se&appid=16065d99458876a6807e4ee2cc35107c';
+let apiKey = '&units=metric&&appid=16065d99458876a6807e4ee2cc35107c';
 
 // EVENTLISTENER - När man trycker på 'submit' så kommer då apin att hämtas med fetch, 
 // eventlistenern ligger då på knappen submit.
@@ -52,8 +52,8 @@ button.addEventListener('click', function(event) {
       description.innerHTML = descriptionValue;
       icon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
       temperature.innerHTML = temperatureValue + ' Celsius';
-      windSpeed.innerHTML = windSpeedValue;
-      humidity.innerHTML = humidityValue;
+      windSpeed.innerHTML = windSpeedValue + ' m/s';
+      humidity.innerHTML = humidityValue + ' %';
 
       // IF statement som ändrar färg på stadens namn vid de olika temperaturerna
       // se nedan för de olika brytpunkterna
