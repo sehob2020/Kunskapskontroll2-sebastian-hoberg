@@ -17,6 +17,7 @@ let apiKey = '&units=metric&&appid=16065d99458876a6807e4ee2cc35107c';
 // EVENTLISTENER - När man trycker på 'submit' så kommer då apin att hämtas med fetch, 
 // eventlistenern ligger då på knappen submit.
 button.addEventListener('click', function(event) {
+  event.preventDefault();
   console.log(inputValue.value);
   fetch(baseUrl + inputValue.value + apiKey).then(
     function (response) {
@@ -76,7 +77,6 @@ button.addEventListener('click', function(event) {
       console.log(e);
     }
   )
-event.preventDefault();
 })
 
 
